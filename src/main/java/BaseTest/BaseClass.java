@@ -6,6 +6,7 @@ import ObjectRepositories.HomePage;
 import ObjectRepositories.LoginPage;
 import genericUtilities.PropertyUtility;
 import genericUtilities.WebDriverUtilities;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -25,6 +26,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterSuite;
 
 public class BaseClass {
+	
 
 	public WebDriver driver = null;
 	public static WebDriver sdriver=null;
@@ -62,10 +64,9 @@ public class BaseClass {
 		//String BROWSER=browser;
 		if (BROWSER.equals("Edge")) {
 			System.setProperty("webdriver.edge.driver", "C:\\Hemant Data\\Selenium class\\EdgeDriver\\msedgedriver.exe");
+			
 			EdgeOptions options = new EdgeOptions();
-			// DO NOT use --headless here
-			options.addArguments("--start-maximized");
-			options.addArguments("--remote-allow-origins=*"); 
+			options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"); 
 			driver = new EdgeDriver(options);
 		} else if (BROWSER.equals("Chrome")) {
 			driver = new ChromeDriver();
