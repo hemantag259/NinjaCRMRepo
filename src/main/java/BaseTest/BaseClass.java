@@ -60,6 +60,7 @@ public class BaseClass {
 		String BROWSER = pu.toGetDataFromProperty("Browser");
 		//String BROWSER=browser;
 		if (BROWSER.equals("Edge")) {
+			System.setProperty("webdriver.edge.driver", "C:\\Hemant Data\\Selenium class\\EdgeDriver\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		} else if (BROWSER.equals("Chrome")) {
 			driver = new ChromeDriver();
