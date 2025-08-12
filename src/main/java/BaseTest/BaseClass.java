@@ -17,6 +17,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeSuite;
@@ -60,8 +61,11 @@ public class BaseClass {
 		String BROWSER = pu.toGetDataFromProperty("Browser");
 		//String BROWSER=browser;
 		if (BROWSER.equals("Edge")) {
-			System.setProperty("webdriver.edge.driver", "C:\\Hemant Data\\Selenium class\\EdgeDriver\\msedgedriver.exe");
-			driver = new EdgeDriver();
+			EdgeOptions options = new EdgeOptions();
+			// DO NOT use --headless here
+			options.addArguments("--start-maximized");
+			options.addArguments("--remote-allow-origins=*"); 
+			driver = new EdgeDriver(options);
 		} else if (BROWSER.equals("Chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equals("Firefox")) {
