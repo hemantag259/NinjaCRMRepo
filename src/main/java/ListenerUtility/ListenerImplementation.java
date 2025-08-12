@@ -37,7 +37,7 @@ public class ListenerImplementation implements ISuiteListener,ITestListener {
 		Date d=new Date();
 	    String newDate = d.toString().replace(" ", "_").replace(":", "_");
 	    
-	   spark=new ExtentSparkReporter("./AdvanceReport/report"+newDate+".html");
+	   spark=new ExtentSparkReporter("target/AdvanceReport/report"+newDate+".html");
 	   spark.config().setDocumentTitle("Ninja CRM Test Suite");
 	   spark.config().setReportName("CRM Report");
 	   spark.config().setTheme(Theme.DARK);
