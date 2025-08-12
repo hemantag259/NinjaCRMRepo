@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-12T17:19:05 IST" name="Default suite" finished-at="2025-08-12T17:19:10 IST" duration-ms="4948">
+  <suite started-at="2025-08-12T17:26:03 IST" name="Default suite" finished-at="2025-08-12T17:26:05 IST" duration-ms="2341">
     <groups>
       <group name="regression">
         <method signature="CampaignTest.createCampaignWithExpectedDate()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" name="createCampaignWithExpectedDate" class="Campaign.CampaignTest"/>
@@ -11,13 +11,13 @@
         <method signature="CampaignTest.createCampaignTest()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" name="createCampaignTest" class="Campaign.CampaignTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-08-12T17:19:05 IST" name="Default test" finished-at="2025-08-12T17:19:10 IST" duration-ms="4948">
+    <test started-at="2025-08-12T17:26:03 IST" name="Default test" finished-at="2025-08-12T17:26:05 IST" duration-ms="2341">
       <class name="Campaign.CampaignTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:05 IST" name="beforeSuite" finished-at="2025-08-12T17:19:05 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:03 IST" name="beforeSuite" finished-at="2025-08-12T17:26:03 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:06 IST" name="beforeClass" finished-at="2025-08-12T17:19:10 IST" duration-ms="4807" status="FAIL">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:03 IST" name="beforeClass" finished-at="2025-08-12T17:26:05 IST" duration-ms="2221" status="FAIL">
           <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
             <message>
               <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
@@ -96,11 +96,11 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999350882" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999765429" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignTest()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="createCampaignTest" finished-at="2025-08-12T17:19:10 IST" duration-ms="0" status="SKIP">
+        <test-method signature="createCampaignTest()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="createCampaignTest" finished-at="2025-08-12T17:26:05 IST" duration-ms="0" status="SKIP">
           <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
             <message>
               <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
@@ -179,15 +179,15 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999350921" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999765463" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999350925" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999765466" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignWithExpectedDate()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="createCampaignWithExpectedDate" finished-at="2025-08-12T17:19:10 IST" duration-ms="0" status="SKIP">
+        <test-method signature="createCampaignWithExpectedDate()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="createCampaignWithExpectedDate" finished-at="2025-08-12T17:26:05 IST" duration-ms="0" status="SKIP">
           <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
             <message>
               <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
@@ -266,15 +266,15 @@ at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignWithExpectedDate -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999350933" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999765475" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999350935" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1754999765479" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:19:10 IST" name="afterSuite" finished-at="2025-08-12T17:19:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:26:05 IST" name="afterSuite" finished-at="2025-08-12T17:26:05 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
