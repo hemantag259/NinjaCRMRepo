@@ -63,9 +63,9 @@ public class BaseClass {
 		//String BROWSER=browser;
 		if (BROWSER.equals("Edge")) {
 			//System.setProperty("webdriver.edge.driver", "C:\\Hemant Data\\Selenium class\\EdgeDriver\\msedgedriver.exe");
-			   WebDriverManager.edgedriver().setup();
+			   
 			EdgeOptions options = new EdgeOptions();
-			options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"); 
+			
 			driver = new EdgeDriver(options);
 		} else if (BROWSER.equals("Chrome")) {
 			driver = new ChromeDriver();
