@@ -7,7 +7,7 @@ public class VerifywithChromeTest {
 	@Test
 	public void runChrome()
 	{
-		System.out.println("Chrome launched");
+		System.out.println("Browser launched");
 	}
 
 }
