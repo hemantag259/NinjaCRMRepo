@@ -5,13 +5,14 @@
     <classes>
       <class name="Campaign.CampaignTest">
         <methods>
+          <include name="createCampaignWithExpectedDate"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="createCampaignTest"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
-          <include name="createCampaignWithExpectedDateTest"/>
         </methods>
       </class> <!-- Campaign.CampaignTest -->
     </classes>
