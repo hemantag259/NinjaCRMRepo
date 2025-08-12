@@ -1,49 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-12T17:40:35 IST" name="Default suite" finished-at="2025-08-12T17:40:55 IST" duration-ms="19664">
+  <suite started-at="2025-08-12T17:45:29 IST" name="Default suite" finished-at="2025-08-12T17:45:44 IST" duration-ms="15091">
     <groups>
       <group name="regression">
-        <method signature="CampaignTest.createCampaignWithExpectedDate()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" name="createCampaignWithExpectedDate" class="Campaign.CampaignTest"/>
+        <method signature="CampaignTest.createCampaignWithExpectedDate()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" name="createCampaignWithExpectedDate" class="Campaign.CampaignTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CampaignTest.createCampaignTest()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" name="createCampaignTest" class="Campaign.CampaignTest"/>
+        <method signature="CampaignTest.createCampaignTest()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" name="createCampaignTest" class="Campaign.CampaignTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-08-12T17:40:35 IST" name="Default test" finished-at="2025-08-12T17:40:55 IST" duration-ms="19664">
+    <test started-at="2025-08-12T17:45:29 IST" name="Default test" finished-at="2025-08-12T17:45:44 IST" duration-ms="15091">
+      <class name="Campaign.ReadDataFromCMDTest">
+        <test-method signature="CMDDataRead()[pri:0, instance:Campaign.ReadDataFromCMDTest@4f80542f]" started-at="2025-08-12T17:45:29 IST" name="CMDDataRead" finished-at="2025-08-12T17:45:29 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CMDDataRead -->
+      </class> <!-- Campaign.ReadDataFromCMDTest -->
       <class name="Campaign.CampaignTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:35 IST" name="beforeSuite" finished-at="2025-08-12T17:40:35 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:29 IST" name="beforeSuite" finished-at="2025-08-12T17:45:29 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:35 IST" name="beforeClass" finished-at="2025-08-12T17:40:42 IST" duration-ms="6822" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:29 IST" name="beforeClass" finished-at="2025-08-12T17:45:35 IST" duration-ms="5489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:42 IST" name="beforeMethod" finished-at="2025-08-12T17:40:48 IST" duration-ms="6088" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:35 IST" name="beforeMethod" finished-at="2025-08-12T17:45:38 IST" duration-ms="3300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignTest()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:48 IST" name="createCampaignTest" finished-at="2025-08-12T17:40:48 IST" duration-ms="117" status="FAIL">
+        <test-method signature="createCampaignTest()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:38 IST" name="createCampaignTest" finished-at="2025-08-12T17:45:38 IST" duration-ms="50" status="FAIL">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
               <![CDATA[Unexpected alert dialog detected. Performed handler "dismiss". Dialog text: Invalid Credentials: Invalid Credentials
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, findElement {value=//span[text()='Create Campaign'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b]]>
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, findElement {using=xpath, value=//span[text()='Create Campaign']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler "dismiss". Dialog text: Invalid Credentials: Invalid Credentials
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, findElement {value=//span[text()='Create Campaign'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, findElement {using=xpath, value=//span[text()='Create Campaign']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
@@ -90,25 +96,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:48 IST" name="afterMethod" finished-at="2025-08-12T17:40:54 IST" duration-ms="6153" status="FAIL">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:39 IST" name="afterMethod" finished-at="2025-08-12T17:45:44 IST" duration-ms="5708" status="FAIL">
           <exception class="org.openqa.selenium.json.JsonException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, actions {actions=[org.openqa.selenium.interactions.Sequence@695a69a1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b]]>
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, actions {actions=[org.openqa.selenium.interactions.Sequence@175acfb2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, actions {actions=[org.openqa.selenium.interactions.Sequence@695a69a1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, actions {actions=[org.openqa.selenium.interactions.Sequence@175acfb2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
 at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
 at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
@@ -190,9 +196,9 @@ Caused by: org.openqa.selenium.NoSuchWindowException: BrowsingContext does no lo
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, findElement {value=//div[@class='user-icon'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, findElement {using=xpath, value=//div[@class='user-icon']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -222,29 +228,29 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:54 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1755000654971" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:44 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1755000944756" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignWithExpectedDate()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:54 IST" name="createCampaignWithExpectedDate" finished-at="2025-08-12T17:40:54 IST" duration-ms="0" status="SKIP">
+        <test-method signature="createCampaignWithExpectedDate()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:44 IST" name="createCampaignWithExpectedDate" finished-at="2025-08-12T17:45:44 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.json.JsonException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, actions {actions=[org.openqa.selenium.interactions.Sequence@695a69a1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b]]>
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, actions {actions=[org.openqa.selenium.interactions.Sequence@175acfb2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, actions {actions=[org.openqa.selenium.interactions.Sequence@695a69a1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, actions {actions=[org.openqa.selenium.interactions.Sequence@175acfb2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
 at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
 at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
@@ -326,9 +332,9 @@ Caused by: org.openqa.selenium.NoSuchWindowException: BrowsingContext does no lo
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a0a46d76-06ed-4e69-b61b-aec10115800b, findElement {value=//div[@class='user-icon'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12028, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a0a46d76-06ed-4e69-b61b-aec10115800b
+Command: [5dcef132-533d-4b79-b442-f96f7b375a0c, findElement {using=xpath, value=//div[@class='user-icon']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19872, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5dcef132-533d-4b79-b442-f96f7b375a0c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -358,15 +364,15 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignWithExpectedDate -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:54 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1755000654989" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:44 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1755000944768" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:54 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1755000654994" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:44 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1755000944771" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Campaign.CampaignTest@76a4ebf2]" started-at="2025-08-12T17:40:55 IST" name="afterSuite" finished-at="2025-08-12T17:40:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Campaign.CampaignTest@2eae8e6e]" started-at="2025-08-12T17:45:44 IST" name="afterSuite" finished-at="2025-08-12T17:45:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
