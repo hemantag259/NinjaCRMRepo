@@ -61,6 +61,7 @@ public class BaseClass {
 		String BROWSER = pu.toGetDataFromProperty("Browser");
 		//String BROWSER=browser;
 		if (BROWSER.equals("Edge")) {
+			System.setProperty("webdriver.edge.driver", "C:\\Hemant Data\\Selenium class\\EdgeDriver\\msedgedriver.exe");
 			EdgeOptions options = new EdgeOptions();
 			// DO NOT use --headless here
 			options.addArguments("--start-maximized");
