@@ -2,7 +2,7 @@ package Campaign;
 
 import org.testng.annotations.Test;
 
-public class VerifywithChrome {
+public class VerifywithChromeTest {
 	
 	@Test
 	public void runChrome()
